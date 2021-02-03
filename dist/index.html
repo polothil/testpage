@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Save Text File</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Enter the values for the case study</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="integer">Integer value</label>
+          <input type="number" id="integer" placeholder="Enter integer value" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="decimal">Decimal value</label>
+          <input type="number" id="decimal" placeholder="Enter Decimal value" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-block">
+          <p>Opt one of the following options</p>
+          <input type="radio" id="option1" name="radio_options" value="option1" />
+          <label for="option1">Option 1</label><br />
+          <input type="radio" id="option2" name="radio_options" value="option2" />
+          <label for="option2">Option 2</label><br />
+          <input type="radio" id="option3" name="radio_options" value="option3" />
+          <label for="option3">Option 3</label>
+        </div>
+        <div class="form-block">
+          <p>Check the relevant boxes</p>
+          <input type="checkbox" id="case1" name="case1" value="case1" />
+          <label for="case1"> Case 1</label><br />
+          <input type="checkbox" id="case2" name="case2" value="case2" />
+          <label for="case2"> Case 2</label><br />
+          <input type="checkbox" id="case3" name="case3" value="case3" />
+          <label for="case3"> Case 3</label><br />
+        </div>
+
+        <div class="form-block">
+          <label for="select-list">Select from drop down list</label><br />
+          <select id="select-list" name="select-list">
+            <option value="item 1" selected>Item 1</option>
+            <option value="item 2">Item 2</option>
+            <option value="item 3">Item 3</option>
+            <option value="item 4">Item 4</option>
+          </select>
+        </div>
+
+        <input type="reset" />
+        <input type="submit" value="Submit" />
+        <!-- <button type="submit" onclick="saveFile()">Save data to file</button> -->
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
